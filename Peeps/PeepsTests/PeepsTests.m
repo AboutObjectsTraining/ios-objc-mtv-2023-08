@@ -83,7 +83,9 @@
 - (void)testKVCSetter {
     Person *fred = [[Person alloc] init];
     Dog *rover = [[Dog alloc] init];
-    [fred setDog:rover];
+    
+    fred.dog = rover;
+//    [fred setDog:rover];
     
     [fred setValue:@"Rover" forKeyPath:@"dog.name"];
     

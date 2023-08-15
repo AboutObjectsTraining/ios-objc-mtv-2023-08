@@ -33,15 +33,15 @@
 
 
 - (nonnull id)copyWithZone:(nullable NSZone *)zone {
-    return [[self class] personWithFirstName:[self firstName]
-                                    lastName:[self lastName]
-                                         age:[self age]];
+    return [self.class personWithFirstName:self.firstName
+                                  lastName:self.lastName
+                                       age:self.age];
 }
 
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if ([[self dog] respondsToSelector:aSelector])
-        return [self dog];
+    if ([self.dog respondsToSelector:aSelector])
+        return self.dog;
     
     return [super forwardingTargetForSelector:aSelector];
 }
@@ -49,44 +49,15 @@
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) return YES;
     
-    return [[self dog] respondsToSelector:aSelector];
-}
-
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = [newValue copy];
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = [newValue copy];
+    return [self.dog respondsToSelector:aSelector];
 }
 
 - (NSString *)fullName {
-    return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
-//    return [[NSString alloc] initWithFormat:@"%@ %@", [self firstName], [self lastName]];
-}
-
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (Dog *)dog {
-    return _dog;
-}
-- (void)setDog:(Dog *)newValue {
-    _dog = newValue;
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@, age: %@", [self fullName], @([self age])];
+    return [NSString stringWithFormat:@"%@, age: %@", self.fullName, @(self.age)];
 }
 
 @end

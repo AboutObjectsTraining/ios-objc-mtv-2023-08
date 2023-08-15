@@ -16,6 +16,7 @@
     NSString *s4 = [s2 initWithString:@"Woohoo!"];
     
     NSLog(@"%@", s3);
+    NSLog(@"%@", s4);
 }
 
 
