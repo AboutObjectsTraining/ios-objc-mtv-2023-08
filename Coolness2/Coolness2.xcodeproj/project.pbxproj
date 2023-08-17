@@ -16,6 +16,7 @@
 		B410EF322A8E898700917195 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B410EF2C2A8E898600917195 /* CLNCoolViewController.m */; };
 		B410EF352A8E899C00917195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B410EF332A8E899C00917195 /* Main.storyboard */; };
 		B410EF372A8E8AB600917195 /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = B410EF362A8E8AB600917195 /* CoolStuff.xib */; };
+		B410EF3A2A8EC9E800917195 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B410EF392A8EC9E800917195 /* CLNCoolView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B410EF2E2A8E898700917195 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
 		B410EF342A8E899C00917195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B410EF362A8E8AB600917195 /* CoolStuff.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
+		B410EF382A8EC9E800917195 /* CLNCoolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
+		B410EF392A8EC9E800917195 /* CLNCoolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +73,13 @@
 				B410EF292A8E898400917195 /* AppDelegate.m */,
 				B410EF272A8E898300917195 /* SceneDelegate.h */,
 				B410EF2A2A8E898500917195 /* SceneDelegate.m */,
-				B410EF2E2A8E898700917195 /* CLNCoolViewCell.h */,
-				B410EF2B2A8E898500917195 /* CLNCoolViewCell.m */,
 				B410EF362A8E8AB600917195 /* CoolStuff.xib */,
 				B410EF282A8E898400917195 /* CLNCoolViewController.h */,
 				B410EF2C2A8E898600917195 /* CLNCoolViewController.m */,
+				B410EF382A8EC9E800917195 /* CLNCoolView.h */,
+				B410EF392A8EC9E800917195 /* CLNCoolView.m */,
+				B410EF2E2A8E898700917195 /* CLNCoolViewCell.h */,
+				B410EF2B2A8E898500917195 /* CLNCoolViewCell.m */,
 				B410EEFC2A8E877100917195 /* Assets.xcassets */,
 				B410EF332A8E899C00917195 /* Main.storyboard */,
 				B410EEFE2A8E877100917195 /* LaunchScreen.storyboard */,
@@ -160,6 +165,7 @@
 				B410EF312A8E898700917195 /* CLNCoolViewCell.m in Sources */,
 				B410EF302A8E898700917195 /* SceneDelegate.m in Sources */,
 				B410EF032A8E877100917195 /* main.m in Sources */,
+				B410EF3A2A8EC9E800917195 /* CLNCoolView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,27 +2,27 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "CLNCoolViewController.h"
-#import "CLNCoolViewCell.h"
+//#import "CLNCoolViewCell.h"
 
-@interface CLNCoolViewController () <UITextFieldDelegate>
-@property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (strong, nonatomic) IBOutlet UITextField *textField;
-@end
+//@interface CLNCoolViewController () <UITextFieldDelegate>
+//@property (strong, nonatomic) IBOutlet UIView *contentView;
+//@property (strong, nonatomic) IBOutlet UITextField *textField;
+//@end
 
 @implementation CLNCoolViewController
 
-- (IBAction)addCell {
-    NSLog(@"In %s", __func__);
-    CLNCoolViewCell *newCell = [[CLNCoolViewCell alloc] init];
-    newCell.text = self.textField.text;
-    newCell.backgroundColor = UIColor.systemGreenColor;
-    [self.contentView addSubview:newCell];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self.textField resignFirstResponder];
-    return YES;
-}
+//- (IBAction)addCell {
+//    NSLog(@"In %s", __func__);
+//    CLNCoolViewCell *newCell = [[CLNCoolViewCell alloc] init];
+//    newCell.text = self.textField.text;
+//    newCell.backgroundColor = UIColor.systemGreenColor;
+//    [self.contentView addSubview:newCell];
+//}
+//
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+//    [self.textField resignFirstResponder];
+//    return YES;
+//}
 
 // MARK: - Examples
 
