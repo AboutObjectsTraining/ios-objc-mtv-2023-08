@@ -3,8 +3,9 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
 @interface CLNCoolViewCell : UIView
 
-@property (copy, nonatomic) NSString *text;
+@property (copy, nonatomic) IBInspectable NSString *text;
 
 @end
